@@ -3,6 +3,7 @@ import TopButtons from "./components/TopButtons";
 import Inputs from "./components/Inputs";
 import TimeAndLocation from "./components/TimeAndLocation";
 import TemperatureAndDetails from "./components/TemperatureAndDetails";
+import Forcast from "./components/Forcast";
 // import UilReact from "@iconscout/react-unicons/icons/uil-react";
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
 
       <TimeAndLocation />
       <TemperatureAndDetails />
+      <Forcast title='Hourly Weather Forcast' />
+      <Forcast title='Daily Weather Forcast' />
     </div>
   );
 }
