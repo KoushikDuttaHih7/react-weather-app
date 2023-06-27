@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 // import UilReact from "@iconscout/react-unicons/icons/uil-react";
 
 function App() {
-  const [query, setQuery] = useState({ q: "berlin" });
+  const [query, setQuery] = useState({ q: "london" });
   const [units, setUnits] = useState("metric");
   const [weather, setWeather] = useState(null);
 
@@ -30,7 +30,7 @@ function App() {
       {weather && (
         <div>
           <TimeAndLocation weather={weather} />
-          <TemperatureAndDetails />
+          <TemperatureAndDetails weather={weather} />
           {/* <Forcast title='Hourly Weather Forcast' />
     <Forcast title='Daily Weather Forcast' /> */}
         </div>
