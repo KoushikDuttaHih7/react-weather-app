@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     const fetchWeather = async () => {
-      await getFormattedWeatherData({ ...query, ...units }).then((data) => {
+      await getFormattedWeatherData({ ...query, units }).then((data) => {
         setWeather(data);
       });
     };
@@ -31,8 +31,8 @@ function App() {
         <div>
           <TimeAndLocation weather={weather} />
           <TemperatureAndDetails weather={weather} />
-          {/* <Forcast title='Hourly Weather Forcast' />
-    <Forcast title='Daily Weather Forcast' /> */}
+          {/* <Forcast title='Hourly Weather Forcast' items={weather.hourly} />
+          <Forcast title='Daily Weather Forcast' items={weather.daily} /> */}
         </div>
       )}
     </div>
