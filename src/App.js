@@ -29,7 +29,7 @@ function App() {
       <Inputs />
       {weather && (
         <div>
-          <TimeAndLocation />
+          <TimeAndLocation weather={weather} />
           <TemperatureAndDetails />
           {/* <Forcast title='Hourly Weather Forcast' />
     <Forcast title='Daily Weather Forcast' /> */}
